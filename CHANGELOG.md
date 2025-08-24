@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/DanielGabbay/typescript-toolkit/compare/v1.0.1...v1.1.0) (2025-08-24)
+
+
+### Features
+
+* **type:** add TypeFrom utility type for extracting object value types ([fd23d67](https://github.com/DanielGabbay/typescript-toolkit/commit/fd23d674382bee2bc097fc8f5a418722ce4992b2))
+
 ## [1.0.1](https://github.com/DanielGabbay/typescript-toolkit/compare/v1.0.0...v1.0.1) (2025-08-24)
 
 
