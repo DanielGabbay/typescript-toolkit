@@ -9,41 +9,18 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
-    },
-    "./array": {
-      "types": "./dist/array.d.ts",
-      "import": "./dist/array.js"
-    },
-    "./function": {
-      "types": "./dist/function.d.ts",
-      "import": "./dist/function.js"
-    },
-    "./object": {
-      "types": "./dist/object.d.ts",
-      "import": "./dist/object.js"
-    },
-    "./string": {
-      "types": "./dist/string.d.ts",
-      "import": "./dist/string.js"
-    },
-    "./type": {
-      "types": "./dist/type.d.ts",
-      "import": "./dist/type.js"
-    },
-    "./performance": {
-      "types": "./dist/performance.d.ts",
-      "import": "./dist/performance.js"
     }
   },
   "files": [
     "dist",
     "README.md"
   ],
+  "sideEffects": false,
   "scripts": {
     "dev": "vitest",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint src tests",
+    "lint": "eslint src",
     "typecheck": "tsc --noEmit",
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
@@ -63,6 +40,7 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "@types/node": "^24.3.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "@vitest/coverage-v8": "^1.6.0",

@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5+-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Build Status](https://github.com/danielgabbay/typescript-toolkit/workflows/CI%2FCD/badge.svg)](https://github.com/danielgabbay/typescript-toolkit/actions)
-[![Coverage](https://img.shields.io/badge/coverage-97.77%25-brightgreen)](https://github.com/danielgabbay/typescript-toolkit)
+[![Coverage](https://img.shields.io/badge/coverage-90.79%25-brightgreen)](https://github.com/danielgabbay/typescript-toolkit)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/typescript-toolkit)](https://bundlephobia.com/package/typescript-toolkit)
 [![Tree Shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen)](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)
 
@@ -16,17 +16,18 @@ A comprehensive, type-safe, and tree-shakable collection of utility functions de
 ## ⚡ Quick Start
 
 ```bash
-npm install typescript-toolkit
+npm install @danielgabbay/typescript-toolkit
 ```
 
 ```typescript
 // Import everything
-import * as toolkit from 'typescript-toolkit';
+import * as toolkit from '@danielgabbay/typescript-toolkit';
 
 // Tree-shakable imports (recommended)
-import { chunk, unique } from 'typescript-toolkit/array';
-import { camelCase, slugify } from 'typescript-toolkit/string';
-import { deepClone, pick } from 'typescript-toolkit/object';
+import { chunk, unique, flatten } from '@danielgabbay/typescript-toolkit';
+import { camelCase, slugify, truncate } from '@danielgabbay/typescript-toolkit';
+import { deepClone, pick, merge } from '@danielgabbay/typescript-toolkit';
+import { debounce, memoize, retry } from '@danielgabbay/typescript-toolkit';
 
 // Usage examples
 const users = [

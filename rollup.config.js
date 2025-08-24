@@ -3,45 +3,31 @@ import dts from 'rollup-plugin-dts';
 
 const config = [
   {
-    input: {
-      index: 'src/index.ts',
-      array: 'src/array.ts',
-      function: 'src/function.ts',
-      object: 'src/object.ts',
-      string: 'src/string.ts',
-      type: 'src/type.ts',
-      performance: 'src/performance.ts'
-    },
+    input: 'src/index.ts',
     output: {
-      dir: 'dist',
+      file: 'dist/index.js',
       format: 'es',
-      sourcemap: true,
-      preserveModules: false
+      sourcemap: true
     },
     plugins: [
       typescript({
         tsconfig: './tsconfig.json',
         declaration: false,
-        declarationMap: false
+        declarationMap: false,
+        exclude: ['**/*.spec.ts', '**/*.test.ts']
       })
     ],
     external: []
   },
   {
-    input: {
-      index: 'src/index.ts',
-      array: 'src/array.ts',
-      function: 'src/function.ts',
-      object: 'src/object.ts',
-      string: 'src/string.ts',
-      type: 'src/type.ts',
-      performance: 'src/performance.ts'
-    },
+    input: 'src/index.ts',
     output: {
-      dir: 'dist',
+      file: 'dist/index.d.ts',
       format: 'es'
     },
-    plugins: [dts()],
+    plugins: [dts({
+      exclude: ['**/*.spec.ts', '**/*.test.ts']
+    })],
     external: []
   }
 ];
