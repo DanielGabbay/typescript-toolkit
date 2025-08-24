@@ -1,5 +1,5 @@
 {
-  "name": "typescript-toolkit",
+  "name": "@danielgabbay/typescript-toolkit",
   "version": "1.0.0",
   "description": "Modern utility functions for TypeScript",
   "type": "module",
@@ -73,5 +73,9 @@
     "tslib": "^2.7.0",
     "typescript": "^5.5.0",
     "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
