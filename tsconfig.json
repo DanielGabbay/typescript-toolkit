@@ -9,7 +9,6 @@
     "allowJs": true,
     "checkJs": false,
     "outDir": "./dist",
-    "rootDir": "./src",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -22,7 +21,8 @@
     "declarationMap": true,
     "sourceMap": true,
     "removeComments": false,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "types": ["vitest/globals", "node"]
   },
   "include": [
     "src/**/*"
@@ -30,6 +30,8 @@
   "exclude": [
     "node_modules",
     "dist",
-    "tests"
+    "tests",
+    "**/*.spec.ts",
+    "**/*.test.ts"
   ]
 }
