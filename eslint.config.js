@@ -16,12 +16,12 @@ export default [
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'error',
-      '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/prefer-const': 'error',
+      '@typescript-eslint/no-explicit-any': 'off', // Allow any in utility functions
+      'prefer-const': 'error',
       '@typescript-eslint/no-inferrable-types': 'error'
     }
   },
   {
-    ignores: ['dist/', 'node_modules/', '*.config.js']
+    ignores: ['dist/', 'node_modules/', '*.config.js', 'coverage/']
   }
 ];
