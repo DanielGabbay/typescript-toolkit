@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/DanielGabbay/typescript-toolkit/compare/v1.0.0...v1.0.1) (2025-08-24)
+
+
+### Bug Fixes
+
+* **package:** scope name for npm publish ([fa68a02](https://github.com/DanielGabbay/typescript-toolkit/commit/fa68a02beb9594fd34ef86a682c713739bdf6130))
+
 # 1.0.0 (2025-08-24)
 
 
