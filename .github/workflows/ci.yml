@@ -69,3 +69,13 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
+      
+      # Notify release status
+      - name: Release Status
+        if: always()
+        run: |
+          if [ "${{ steps.semantic.outputs.new_release_published }}" = "true" ]; then
+            echo "✅ New version released: ${{ steps.semantic.outputs.new_release_version }}"
+          else
+            echo "ℹ️ No release needed (no relevant commits since last release)"
+          fi

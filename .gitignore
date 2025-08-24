@@ -4,6 +4,7 @@ npm-debug.log*
 
 # Build outputs
 dist/
+!dist/.gitkeep
 
 # Environment variables
 .env
@@ -23,3 +24,4 @@ coverage/
 # Temporary files
 *.tsbuildinfo
 .nyc_output
+QUICKSTART.md
