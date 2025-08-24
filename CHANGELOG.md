@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/DanielGabbay/typescript-toolkit/compare/v1.1.0...v1.2.0) (2025-08-24)
+
+
+### Features
+
+* enhance tree shaking documentation and examples ([5fdacc3](https://github.com/DanielGabbay/typescript-toolkit/commit/5fdacc39583da0dcb924471af65d828877e11d3e))
+
 # [1.1.0](https://github.com/DanielGabbay/typescript-toolkit/compare/v1.0.1...v1.1.0) (2025-08-24)
 
 
