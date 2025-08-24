@@ -25,3 +25,4 @@ coverage/
 *.tsbuildinfo
 .nyc_output
 QUICKSTART.md
+GITHUB_SETUP.md

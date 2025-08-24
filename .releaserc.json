@@ -15,7 +15,9 @@
       {
         "assets": [
           {"path": "dist/**/*", "label": "Distribution files"}
-        ]
+        ],
+        "failComment": false,
+        "failTitle": false
       }
     ],
     [
